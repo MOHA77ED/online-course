@@ -1,0 +1,47 @@
+{
+  "myProfile": {
+    "registrationDate": "April 1, 2024 8:43 am",
+    "firstName": "Mohammed",
+    "lastName": "Naji",
+    "userName": "mhdnaji763@gmail.com",
+    "email": "mhdnaji763@gmail.com",
+    "phoneNumber": "096623113295"
+  },
+  "enrolledCourses": 0,
+  "activeCourses": 0,
+  "completedCourses": 0,
+  "orderHistory": {
+    "orderId": "222",
+    "courseName": "Frontend Development",
+    "date": "April 17, 2024",
+    "price": "288$",
+    "status": "processing"
+  },
+  "wishList": 0,
+  "setting": {
+    "profile": {
+      "coverPhoto": "",
+      "photo": "",
+      "firstName": "",
+      "lastName": "",
+      "phoneNumber": "09662311295",
+      "userName": "mhdnaji763@gmail.com",
+      "skill": "",
+      "Bio": "",
+      "namePublicly ": ""
+    },
+    "password": {
+      "currentPassword": "",
+      "newPassword": "",
+      "confirmPassword": ""
+    },
+    "socialProfile": {
+      "facebook": "",
+      "twiiter": "",
+      "youtube": "",
+      "linkedIn": "",
+      "github": "",
+      "website": ""
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "Intended learners": {
+    "studentLearn": [ "one", "two", "three" ],
+    "requirements": [ "one", "two" ],
+    "courseFor": [ "one", "two" ]
+  },
+  "landingPage": {
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "info": {
+      "language": "english",
+      "level": "Bigenner",
+      "category": "web debelopment",
+      "primarilyTaught": "",
+      "courseImage": "",
+      "PromotionalVideo": ""
+    },
+    "price": "2000",
+    "welcomeMessage": "",
+    "CongratulationsMessage": ""
+  },
+  "curriculum": {
+    "sections": [
+      {
+        "section": {
+          "title": "",
+          "learningObjective": "",
+          "content": [
+            {
+              "type": "licuture",
+              "title": "",
+              "content": {
+                "video": "",
+                "article": ""
+              },
+              "description": "you will able to do nothing just waste you time"
+            },
+
+            {
+              "type": "quiz",
+              "title": "",
+              "description": "what about the quiz",
+              "questions": [
+                {
+                  "question": "what is HTML refer to",
+                  "answers": [
+                    { "text": "h t m l", "status": false },
+                    { "text": "h t m l", "status": false },
+                    { "text": "h t m l", "status": false },
+                    { "text": "HyperText Markup Language", "status": true }
+                  ]
+                },
+                {
+                  "question": "what is HTML refer to",
+                  "answers": [
+                    { "text": "h t m l", "status": false },
+                    { "text": "h t m l", "status": false },
+                    { "text": "h t m l", "status": false },
+                    { "text": "HyperText Markup Language", "status": true }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "type": "licuture",
+              "title": "",
+              "content": {
+                "video": "",
+                "article": ""
+              },
+              "description": "you will able to do nothing just waste you time"
+            }
+          ]
+        }
+      }
+
+    ]
+  }
+
+}
+
