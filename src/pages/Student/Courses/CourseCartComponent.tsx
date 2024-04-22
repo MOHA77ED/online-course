@@ -1,10 +1,10 @@
 import {
 	ClockIcon,
-	PlusCircleIcon,
 	ShoppingCartIcon,
 	UsersIcon,
 } from "@heroicons/react/24/outline";
 import { PhotoIcon, StarIcon } from "@heroicons/react/24/solid";
+import { BiBookmarkAltPlus } from "react-icons/bi";
 type Course = {
 	title: string;
 	rate: number;
@@ -21,28 +21,32 @@ type Course = {
 type CourseCartType = {
 	course: Course;
 };
+
+function getRate(rate: number): boolean[] {
+	const rates: boolean[] = [];
+	for (let i = 1; i <= 5; i++) {
+		if (i <= rate) {
+			rates.push(true);
+		} else {
+			rates.push(false);
+		}
+	}
+	return rates;
+}
 export default function CourseCartComponent({ course }: CourseCartType) {
 	const addToWishist = () => {
 		console.log("Added To Wishest");
 	};
 
-	const rate = [];
-	for (let i = 1; i <= 5; i++) {
-		if (i < course.rate) {
-			rate.push(true);
-		} else {
-			rate.push(false);
-		}
-	}
 	return (
-		<div className="roudned-lg shadow-xl relative mt-12 mb-40">
+		<div className="roudned-lg shadow-xl relative">
 			<button
 				onClick={addToWishist}
 				type="button"
-				className="absolute right-2 top-2  bg-teal-300 rounded-full"
+				className="absolute right-2 top-2 text-cyan-800  bg-slate-500 hover:text-white hover:bg-cyan-800  p-1 rounded-full transition"
 			>
 				{}
-				<PlusCircleIcon className="size-8 text-teal-700 hover:text-teal-600 cursor-pointer transition" />
+				<BiBookmarkAltPlus className="size-6  cursor-pointer" />
 			</button>
 			{!course.courseImage && (
 				<div className="w-full bg-white">
@@ -60,7 +64,7 @@ export default function CourseCartComponent({ course }: CourseCartType) {
 			)}
 			<div className="p-2">
 				<div className="flex mb-2">
-					{rate.map((r, ind: number) => {
+					{getRate(course.rate).map((r, ind: number) => {
 						return (
 							<StarIcon
 								className={`size-10  p-2 ${

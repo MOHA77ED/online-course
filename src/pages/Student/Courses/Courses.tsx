@@ -45,7 +45,7 @@ const course3 = {
 export default function Courses() {
 	return (
 		<>
-			<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 container">
+			<div className="grid relative gap-4 md:grid-cols-2 lg:grid-cols-3 container pb-44 mt-44">
 				<CourseCartComponent course={course1} />
 				<CourseCartComponent course={course2} />
 				<CourseCartComponent course={course3} />
